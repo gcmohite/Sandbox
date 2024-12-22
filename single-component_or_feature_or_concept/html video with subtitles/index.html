@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blank Workspace</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!-- <video src="./resources/video/rabbit320.mp4" controls muted autoplay loop muted>
+      <p>
+        This video is not supported by your browser. You can
+        <a href="./resources/video/rabbit320.mp4">download the video</a>
+        instead
+      </p>
+    </video> -->
+    <video
+      controls
+      muted
+      poster="./resources/img/rabbit_400x400.jpg"
+      preload="metadata"
+    >
+      <source src="./resources/video/rabbit320.mp4" type="video/mp4" />
+      <source src="./resources/video/rabbit320.webm" type="video/webm" />
+      <track
+        default
+        kind="subtitles"
+        src="rabbit.vtt"
+        srclang="en"
+        label="English"
+      />
+      <p>
+        This video is not supported by your browser. You can
+        <a href="./resources/video/rabbit320.mp4">download the video</a>
+        instead
+      </p>
+    </video>
+
+    <br />
+
+    <audio controls>
+      <source src="./resources/audio/viper.mp3" type="audio/mp3" />
+      <source src="./resources/audio/viper.ogg" type="audio/ogg" />
+    </audio>
+  </body>
+</html>

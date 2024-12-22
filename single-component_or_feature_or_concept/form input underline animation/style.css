@@ -1,0 +1,60 @@
+.container {
+  width: 400px;
+  height: 200px;
+  border: 1px solid;
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.container:hover > .line {
+  /* background-color: green; */
+  /* animation: animate 0.1s forwards alternate ease-out; */
+}
+
+@keyframes animate {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+    background-color: aqua;
+  }
+}
+
+input {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid darkgrey;
+  transition: all 0.2s ease-in-out;
+}
+
+input:hover {
+  border-bottom: 2px solid black;
+}
+
+input:focus {
+  animation: borderfill 0.1s forwards ease;
+}
+
+@keyframes borderfill {
+  from {
+    width: 0px;
+  }
+
+  to {
+    width: 100%;
+    border-color: greenls;
+  }
+}

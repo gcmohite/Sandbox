@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, teal, turquoise);
+  color: #eee;
+}
+
+.btn {
+  border: 0;
+  outline: 0;
+  padding: 15px 30px;
+  border-radius: 7.5px;
+  box-shadow: 0 2px 1px 1px #333;
+  background-color: teal;
+  color: white;
+}

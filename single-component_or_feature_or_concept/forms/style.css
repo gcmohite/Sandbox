@@ -1,0 +1,92 @@
+:root {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  --label-width: 10vw;
+  --cursive: 'Mea Culpa', cursive;
+  --h1-size: 3rem;
+  --h2-size: 2rem;
+  --h3-size: 1.5rem;
+  --small-gap: 1rem;
+  --medium-gap: 2rem;
+  --large-gap: 3rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  border: 1px solid black;
+  max-width: 60rem;
+  margin: 2rem auto 0;
+  padding: 2rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+ul li {
+  list-style: none;
+}
+
+h1 {
+  font-size: var(--h1-size);
+  margin-bottom: var(--large-gap);
+  align-self: center;
+}
+
+h2 {
+  font-size: var(--h2-size);
+}
+
+label {
+  display: block;
+}
+
+p {
+  margin-bottom: var(--small-gap);
+}
+
+p#name {
+  margin-top: var(--small-gap);
+}
+
+section {
+  margin-bottom: var(--medium-gap);
+}
+
+fieldset {
+  width: 50%;
+  padding: var(--small-gap);
+  position: relative;
+}
+
+#submit {
+  align-self: center;
+}
+
+button {
+  padding: 1rem 2rem;
+  background-color: lightblue;
+  outline-color: transparent;
+  border: none;
+  border-radius: 1000px;
+  transform: translateY(1rem);
+}
+
+button:hover {
+  background-color: lightgreen;
+  font-weight: bold;
+  scale: 1.03;
+  transition: all 0.2s;
+}
+
+legend {
+  text-align: center;
+}
